@@ -1,0 +1,28 @@
+.PureServer {
+    padding: 8px 16px;
+    transform: rotate(180deg);
+    writing-mode: tb-rl;
+    flex-grow: 1;
+    align-items: baseline;
+    vertical-align: baseline;
+}
+
+.rotate-right {
+    transform: rotate(0deg);
+}
+
+.is-serving {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(158, 37, 255, 0.8);
+}
+
+@media (orientation: portrait) {
+    .PureServer {
+        writing-mode: initial;
+        transform: rotate(0deg);
+    }
+
+    .rotate-right {
+        transform: rotate(180deg);
+    }
+}
