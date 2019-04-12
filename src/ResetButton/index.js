@@ -1,9 +1,10 @@
 import React from 'react';
 import { ClickArea } from '../ClickArea';
 import { identity } from 'ramda';
+import './ResetButton.css';
 
 export const ResetButton = ({ onClick = identity }) => <>
   <ClickArea onClick={onClick}>
-    <div style={{ padding: '16px' }}>NEW GAME</div>
+    <div className='button'>NEW GAME</div>
   </ClickArea>
 </>;
