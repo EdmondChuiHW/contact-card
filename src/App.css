@@ -33,6 +33,10 @@
         flex-direction: column;
     }
 
+    .App .counter.left {
+        transform: rotate(180deg);
+    }
+
     .App .resetButton {
         bottom: auto;
         left: 50%;

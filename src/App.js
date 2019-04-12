@@ -27,7 +27,7 @@ const App = () => {
   return (
     <div className="App">
       <div className='server'><PureServer isServing={leftServing} rotateRight={true}/></div>
-      <div className='counter'><Counter count={countL} incCount={incCountL}/></div>
+      <div className='counter left'><Counter count={countL} incCount={incCountL}/></div>
       <div className='counter'><Counter count={countR} incCount={incCountR}/></div>
       <div className='resetButton'><ResetButton onClick={resetGame}/></div>
       <div className='server'><PureServer isServing={!leftServing}/></div>
