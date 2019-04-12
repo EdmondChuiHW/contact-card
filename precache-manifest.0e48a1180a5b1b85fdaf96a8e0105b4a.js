@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/contact-card/static/js/runtime~main.89ce8845.js"
   },
   {
-    "revision": "fd33d3934a5ea66e0ff3",
-    "url": "/contact-card/static/js/main.051a4ee0.chunk.js"
+    "revision": "67a84bd4074343fe2102",
+    "url": "/contact-card/static/js/main.0d24d1eb.chunk.js"
   },
   {
     "revision": "5e8c2e1714d338b144e0",
     "url": "/contact-card/static/js/2.0628dbff.chunk.js"
   },
   {
-    "revision": "fd33d3934a5ea66e0ff3",
-    "url": "/contact-card/static/css/main.17b6c02d.chunk.css"
+    "revision": "67a84bd4074343fe2102",
+    "url": "/contact-card/static/css/main.d3a94393.chunk.css"
   },
   {
-    "revision": "f0a71bce130cb6c9da0c5101aea3861a",
+    "revision": "8a20d6f09eedf7cf2dfe5aed40b35c28",
     "url": "/contact-card/index.html"
   }
 ];

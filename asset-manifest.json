@@ -1,13 +1,13 @@
 {
-  "main.css": "/contact-card/static/css/main.17b6c02d.chunk.css",
-  "main.js": "/contact-card/static/js/main.051a4ee0.chunk.js",
-  "main.js.map": "/contact-card/static/js/main.051a4ee0.chunk.js.map",
+  "main.css": "/contact-card/static/css/main.d3a94393.chunk.css",
+  "main.js": "/contact-card/static/js/main.0d24d1eb.chunk.js",
+  "main.js.map": "/contact-card/static/js/main.0d24d1eb.chunk.js.map",
   "runtime~main.js": "/contact-card/static/js/runtime~main.89ce8845.js",
   "runtime~main.js.map": "/contact-card/static/js/runtime~main.89ce8845.js.map",
   "static/js/2.0628dbff.chunk.js": "/contact-card/static/js/2.0628dbff.chunk.js",
   "static/js/2.0628dbff.chunk.js.map": "/contact-card/static/js/2.0628dbff.chunk.js.map",
   "index.html": "/contact-card/index.html",
-  "precache-manifest.8a250430f32bb255ccbe6cc56076c7c8.js": "/contact-card/precache-manifest.8a250430f32bb255ccbe6cc56076c7c8.js",
+  "precache-manifest.0e48a1180a5b1b85fdaf96a8e0105b4a.js": "/contact-card/precache-manifest.0e48a1180a5b1b85fdaf96a8e0105b4a.js",
   "service-worker.js": "/contact-card/service-worker.js",
-  "static/css/main.17b6c02d.chunk.css.map": "/contact-card/static/css/main.17b6c02d.chunk.css.map"
+  "static/css/main.d3a94393.chunk.css.map": "/contact-card/static/css/main.d3a94393.chunk.css.map"
 }
