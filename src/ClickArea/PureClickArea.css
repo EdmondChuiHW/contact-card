@@ -1,3 +1,8 @@
+.ClickArea {
+    flex: 1;
+    display: flex;
+}
+
 .touched {
     background-color: rgba(0, 0, 0, 0.08);
 }
