@@ -22,18 +22,6 @@
     transform: translateX(-50%);
 }
 
-.App .servers {
-    display: flex;
-    flex-direction: column;
-}
-
-.App .server {
-    display: flex;
-    flex-grow: 1;
-    pointer-events: none;
-    user-select: none;
-}
-
 @media (orientation: portrait) {
     .App {
         flex-direction: column;
@@ -44,9 +32,5 @@
         left: 50%;
         top: 50%;
         transform: translateX(-50%) translateY(-50%);
-    }
-
-    .App .servers {
-        flex-direction: row;
     }
 }

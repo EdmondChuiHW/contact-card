@@ -3,27 +3,22 @@ import './App.css';
 import { Counter } from './Counter';
 import { ResetButton } from './ResetButton';
 import { useCount } from './common/hooks/useCount';
-import { PureServer } from './Server/PureServer';
+import { Servers } from './Server/Servers';
 
 const App = () => {
-  const [countF, incCountF, resetF] = useCount(0);
-  const [countS, incCountS, resetS] = useCount(0);
+  const [countL, incCountL, resetL] = useCount(-1);
+  const [countR, incCountR, resetR] = useCount(-1);
+  const resetCounts = () => resetL() || resetR();
 
-  const resetCounts = () => resetF() || resetS();
+  const isEven = (countL + countR) % 2 === 0;
 
   return (
     <div className="App">
-      <div className='servers'>
-        <div className='server'><PureServer isServing={true} rotateRight={true}/></div>
-        <div className='server'><PureServer isServing={true} rotateRight={true}/></div>
-      </div>
-      <div className='counter'><Counter count={countF} incCount={incCountF}/></div>
-      <div className='counter'><Counter count={countS} incCount={incCountS}/></div>
+      <Servers isEven={isEven} rotateRight={true}/>
+      <div className='counter'><Counter count={countL} incCount={incCountL}/></div>
+      <div className='counter'><Counter count={countR} incCount={incCountR}/></div>
       <div className='resetButton'><ResetButton onClick={resetCounts}/></div>
-      <div className='servers'>
-        <div className='server'><PureServer isServing={true}/></div>
-        <div className='server'><PureServer isServing={true}/></div>
-      </div>
+      <Servers isEven={!isEven}/>
     </div>
   );
 };

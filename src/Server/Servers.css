@@ -1,0 +1,17 @@
+.servers {
+    display: flex;
+    flex-direction: column;
+}
+
+.server {
+    display: flex;
+    flex-grow: 1;
+    pointer-events: none;
+    user-select: none;
+}
+
+@media (orientation: portrait) {
+    .App .servers {
+        flex-direction: row-reverse;
+    }
+}
