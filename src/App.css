@@ -9,3 +9,10 @@
     top: 0;
     bottom: 0;
 }
+
+
+@media (orientation: landscape) {
+    .App {
+        flex-direction: row;
+    }
+}

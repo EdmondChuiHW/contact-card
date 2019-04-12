@@ -7,3 +7,9 @@
     pointer-events: none;
     user-select: none;
 }
+
+@media only screen and (max-width: 600px) {
+    .PureCounter {
+        font-size: 50vw;
+    }
+}
