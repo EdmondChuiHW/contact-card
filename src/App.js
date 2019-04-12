@@ -26,19 +26,19 @@ const App = () => {
   }
   return (
     <div className="App">
-      <div className='server'>
+      <div className='server' data-cy='server-left'>
         <PureServer isServing={leftServing} rotateRight={true}/>
       </div>
-      <div className='counter left'>
+      <div className='counter left' data-cy='counter-left'>
         <Counter count={countL} incCount={incCountL}/>
       </div>
-      <div className='counter'>
+      <div className='counter' data-cy='counter-right'>
         <Counter count={countR} incCount={incCountR}/>
       </div>
-      <div className='resetButton'>
+      <div className='resetButton' data-cy='reset-game'>
         <ResetButton onClick={resetGame}/>
       </div>
-      <div className='server'>
+      <div className='server' data-cy='server-right'>
         <PureServer isServing={!leftServing}/>
       </div>
     </div>
