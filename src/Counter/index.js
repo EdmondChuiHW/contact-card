@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import ClickArea from '../TouchArea/ClickArea';
-import Counter from './Counter';
+import { ClickArea } from '../ClickArea';
+import { PureCounter } from './PureCounter';
 
-export default ({ count = 0 }) => {
+export const Counter = ({ count = 0 }) => {
   const [countS, setState] = useState(count);
 
-  return <ClickArea onClick={setState}>
-    <Counter count={countS}/>
+  return <ClickArea onClick={() => setState(countS + 1)}>
+    <PureCounter count={countS}/>
   </ClickArea>;
 };

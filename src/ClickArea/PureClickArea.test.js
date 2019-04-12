@@ -1,35 +1,35 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ClickArea from './ClickArea';
+import { PureClickArea } from './PureClickArea';
 import { render } from 'react-testing-library';
 import 'jest-dom/extend-expect';
 
-describe('ClickArea', () => {
+describe('PureClickArea', () => {
   it('renders without crashing', () => {
     const div = document.createElement('div');
-    ReactDOM.render(<ClickArea/>, div);
+    ReactDOM.render(<PureClickArea/>, div);
     ReactDOM.unmountComponentAtNode(div);
   });
 
   it('renders without .touched given no props', () => {
-    const { container } = render(<ClickArea/>);
+    const { container } = render(<PureClickArea/>);
     expect(container.firstChild.classList.contains('touched')).toBe(false);
   });
 
   it('renders without .touched given isTouched = false', () => {
-    const { container } = render(<ClickArea isTouched={false}/>);
+    const { container } = render(<PureClickArea isTouched={false}/>);
     expect(container.firstChild.classList.contains('touched')).toBe(false);
   });
 
   it('renders with .touched given isTouched', () => {
-    const { container } = render(<ClickArea isTouched={true}/>);
+    const { container } = render(<PureClickArea isTouched={true}/>);
     expect(container.firstChild.classList.contains('touched')).toBe(true);
   });
 
   it('renders with children given in props', () => {
     const randStr = Math.random().toString();
     const children = <div>{randStr}</div>;
-    const { getByText } = render(<ClickArea isTouched={true}>{children}</ClickArea>);
+    const { getByText } = render(<PureClickArea isTouched={true}>{children}</PureClickArea>);
     expect(getByText(randStr)).toBeInTheDocument();
   });
 });
