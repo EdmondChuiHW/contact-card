@@ -24,6 +24,10 @@
     .StartLeftOrRight {
         flex-direction: column;
     }
+
+    .button-content.left {
+        transform: rotate(180deg);
+    }
 }
 
 
