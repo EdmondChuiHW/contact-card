@@ -22,6 +22,12 @@
     transform: translateX(-50%);
 }
 
+.App .server {
+    display: flex;
+    pointer-events: none;
+    user-select: none;
+}
+
 @media (orientation: portrait) {
     .App {
         flex-direction: column;
